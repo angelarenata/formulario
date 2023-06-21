@@ -16,7 +16,7 @@
 
                 <p class="titulo-principal">Preencha abaixo os campos para criar seu cadastro!</p>
 
-                <form class="form-principal">
+                <form class="form-principal" data-formulario>
                     <fieldset class="campo-form">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" class="input-principal" minlength="3" required/>
@@ -48,13 +48,13 @@
                     </fieldset>
 
                     <fieldset class="campo-form">
-                        <label for="senha-confirma">Confirmação de Senha</label>
-                        <input type="password" name="senha-confirma" id="senha-confirma"  minlength="6" class="input-principal" required/>
+                        <label for="confirma">Confirmação de Senha</label>
+                        <input type="password" name="confirma" id="confirma"  minlength="6" class="input-principal" required/>
                         <span class="mensagem-erro"></span>
                     </fieldset>
 
                     <fieldset class="checkbox">
-                        <input type="checkbox" name="checkbox" id="checkbox" class="input-checkbox" required>
+                        <input type="checkbox" name="checkbox" id="checkbox" class="termos" required>
                         <p class="termos-texto">Li e estou de acordo quanto às condições do site!</p>
                         <span class="mensagem-erro"></span>
                     </fieldset>
