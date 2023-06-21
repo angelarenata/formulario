@@ -59,6 +59,7 @@ body {
 .checkbox {
     border: none;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -82,4 +83,10 @@ body {
 
 .input-concluir:hover {
     background-color:brown
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 14px;
+
 }

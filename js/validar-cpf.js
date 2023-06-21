@@ -1,9 +1,8 @@
 export default function eCPF(campo) {
     const cpf = campo.value.replace(/\.|-/g, "");
-    validarNumRepetido(cpf);
-    validarPrimeiroNumero(cpf);
-    validarSegundoNumero(cpf);
-    console.log(cpf);
+    if (validarNumRepetido(cpf) || validarPrimeiroNumero(cpf) || validarSegundoNumero(cpf)) {
+    campo.setCustomValidity('Este CPF não é válido');
+    }
 }
 
 function validarNumRepetido(cpf) {
@@ -57,4 +56,3 @@ function validarSegundoNumero(cpf) {
 
     return soma != cpf [10];
 }
-
