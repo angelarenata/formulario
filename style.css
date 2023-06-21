@@ -90,3 +90,9 @@ body {
     font-size: 14px;
 
 }
+
+.confirmacao-cadastro {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}

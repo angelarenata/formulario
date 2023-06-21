@@ -56,10 +56,11 @@ const mensagens = {
     },
     senha: {
         valueMissing: 'A senha não pode estar vazia.',
-        tooShort: "A senha não tem caractéres suficientes.",
+        tooShort: "A senha tem que ter no mínimo 6 caracteres",
     },
     confirma: {
-        valueMissing: 'A confirmação de senha não pode estar vazia.',
+        valueMissing: 'A confirmação de senha não pode estar vazia',
+        tooShort: "A confirmação de senha tem que ter no mínimo 6 caracteres",
     },
     checkbox: {
         valueMissing: 'Você deve aceitar nossos termos antes de continuar.',
@@ -76,6 +77,7 @@ function verificarCampo(campo) {
     if (campo.name == "nascimento" && campo.value != "") {
         eMaiorDeIdade(campo);
     }
+
 
     tiposDeErro.forEach(erro => {
         if (campo.validity[erro]) {
