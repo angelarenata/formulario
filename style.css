@@ -67,7 +67,7 @@ body {
     margin: 5px 10px 0 0;
 }
 
-.input-concluir {
+.concluir {
     text-align: center;
     width: 100%;
     border: none;
@@ -81,7 +81,7 @@ body {
     opacity: 1;
 }
 
-.input-concluir:hover {
+.concluir:hover {
     background-color:brown
 }
 
